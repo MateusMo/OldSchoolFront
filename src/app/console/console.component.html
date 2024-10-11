@@ -1,0 +1,9 @@
+<div class="container" tabindex="0" (keydown)="onKey($event)">
+    <div class="text">
+        <div *ngFor="let entry of history">
+            <div class="commandStyle">{{ entry.command }}</div>
+            <div class="responseStyle">{{ entry.response }}</div>
+        </div>
+        <div class="commandStyle">{{ command }}</div> <!-- Para mostrar o comando atual -->
+    </div>
+</div>

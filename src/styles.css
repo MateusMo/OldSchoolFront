@@ -1,1 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+:root{
+    --background-color:#222831;
+    --type-color:#EEEEEE;
+    --answer-color:#76ABAE;
+    --tips-color:#31363F;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
