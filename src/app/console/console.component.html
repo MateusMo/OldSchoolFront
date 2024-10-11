@@ -2,7 +2,8 @@
     <div class="text">
         <div *ngFor="let entry of history">
             <div class="commandStyle">{{ entry.command }}</div>
-            <div class="responseStyle">{{ entry.response }}</div>
+            <!-- Usar [innerHTML] para processar tags HTML dentro de entry.response -->
+            <div class="responseStyle" [innerHTML]="entry.response"></div>
         </div>
         <div class="commandStyle">{{ command }}</div> <!-- Para mostrar o comando atual -->
     </div>
